@@ -1041,6 +1041,16 @@ KBUILD_CFLAGS += $(call cc-disable-warning, stringop-overflow)
 # Another good warning that we'll want to enable eventually
 KBUILD_CFLAGS += $(call cc-disable-warning, restrict)
 
+KBUILD_CFLAGS += $(call cc-disable-warning, stringop-overread)
+KBUILD_CFLAGS += $(call cc-disable-warning, implicit-fallthrough)
+KBUILD_CFLAGS += $(call cc-disable-warning, tautological-compare)
+KBUILD_CFLAGS += $(call cc-disable-warning, int-in-bool-context)
+KBUILD_CFLAGS += $(call cc-disable-warning, unused-variable)
+KBUILD_CFLAGS += $(call cc-disable-warning, comment)
+KBUILD_CFLAGS += $(call cc-disable-warning, format)
+KBUILD_CFLAGS += $(call cc-disable-warning, address)
+KBUILD_CFLAGS += $(call cc-disable-warning, unused-function)
+
 # Enabled with W=2, disabled by default as noisy
 ifdef CONFIG_CC_IS_GCC
 KBUILD_CFLAGS += -Wno-maybe-uninitialized
