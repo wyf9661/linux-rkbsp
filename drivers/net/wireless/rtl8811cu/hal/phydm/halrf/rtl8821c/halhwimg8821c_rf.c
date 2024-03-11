@@ -28,15 +28,7 @@
 
 #define ODM_WIN 0x08
 
-#if (DM_ODM_SUPPORT_TYPE == ODM_WIN)
-#if RT_PLATFORM == PLATFORM_MACOSX
-#include "phydm_precomp.h"
-#else
 #include "../phydm_precomp.h"
-#endif
-#else
-#include "../../phydm_precomp.h"
-#endif
 
 #define D_S_SIZE DELTA_SWINGIDX_SIZE
 #define D_ST_SIZE DELTA_SWINTSSI_SIZE

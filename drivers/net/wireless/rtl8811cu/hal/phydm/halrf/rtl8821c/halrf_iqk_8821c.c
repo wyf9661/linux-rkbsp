@@ -14,15 +14,7 @@
  *****************************************************************************/
 
 #include "mp_precomp.h"
-#if (DM_ODM_SUPPORT_TYPE == ODM_WIN)
-#if RT_PLATFORM == PLATFORM_MACOSX
-#include "phydm_precomp.h"
-#else
 #include "../phydm_precomp.h"
-#endif
-#else
-#include "../../phydm_precomp.h"
-#endif
 
 #if (RTL8821C_SUPPORT == 1)
 /*---------------------------Define Local Constant---------------------------*/
